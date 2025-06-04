@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+/*-----------------Top Container--------*/
+.top-container{
+    height: 650px;
+    background: url('Images/IMG_20210713_211325.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 85%;
+    text-align: center;
+    padding-top: 10px;
+}
+/*-----------------OVERVIEW---------------*/
+.overview{
+    position: absolute;
+    left: 17%;
+    top: 30%;
+    text-align: left;
+}
+.text-s{
+    font-size: 30px;
+}
+.text-b{
+    font-size: 55px;
+    font-weight: bold;
+}
+.btns{
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.btns button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    margin-right: 10px;
+}
+.btns button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.work-btn{
+    color: white;
+    background-color: rgb(94, 55, 40);
+}
+.cv-btn{
+    color: rgb(94, 55, 40);
+    background-color: white;
+}
+
+/*--------------SOCIAL MEDIA----------------*/
+.social-media{
+    position: fixed;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    z-index: 999;
+}
+.dash-line{
+    width: 3px;
+    background-color: rgb(2, 2, 2);
+    text-align: center;
+    margin-left: 40%;
+}
+.media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.media img{
+    width: 25px;
+    height: 25px;
+}
+.media img:hover{
+    cursor: pointer;
+}
+
+/*------------------ About Me-----------------*/
+.about-me{
+    margin-top: 0;
+    background-color: rgb(94, 55, 40);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 40px 10%;
+    justify-content: space-between;
+}
+.profile-img{
+    margin-right: 30px;
+    align-items: center;
+}
+.profile-img img{
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    object-position: center top;
+}
+.bio{
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    padding: 10px 20px;
+}
+.bio::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(94, 55, 40);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    border-top-left-radius: 10px;
+}
+.bio::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(94, 55, 40);
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    border-bottom-right-radius: 10px;
+}
+.bio p{
+    font-size: 24px;
+    line-height: 35px;
+    color: rgb(8, 8, 8);
+}
+
+/*---------------------Skills ------------------*/
+.skills-section{
+    width: 80%;
+    margin: auto;
+}
+.skills-section h3{
+    color: rgb(17, 16, 16);
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px;
+}
+.skills{
+    background: url('Images/keyboard.jpg');
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+.skl{
+    position: relative;
+    padding: 10px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(235, 231, 231,0.5);
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.skl img{
+    height: 220px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgb(94, 55, 40);
+    object-fit: cover;
+}
+.skl p{
+    color: rgb(34, 33, 33);
+    font-size: 20px;
+    margin-top: 5px;
+}
+.skill-description{
+    display: none;
+    opacity: 0;
+    background-color: rgba(255, 255, 255,0.7);
+    position: absolute;
+    height: 120px;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.7s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2px 7px;
+}
+.full-bar{
+    position: absolute;
+    bottom: 20px;
+    left: 7px;
+    right: 7px;
+    background-color: white;
+    border: 1px solid rgb(94, 55, 40);
+    border-radius: 10px;
+    text-align: left;
+}
+.skl:hover{
+    transform: translateY(-7px);
+    background-color: rgba(235, 231, 231,0.1);
+}
+.skl:hover .skill-description{
+    display: block;
+    opacity: 1;
+}
+.skl:hover .full-bar{
+    display: none;
+}
+.css{
+    width: 75%;
+    background-color: rgb(94, 55, 40);
+}
+.js{
+    width: 75%;
+    background-color: rgb(94, 55, 40);
+}
+.react{
+    width: 70%;
+    background-color: rgb(94, 55, 40);
+}
+.html{
+    width: 90%;
+    background-color: rgb(94, 55, 40);
+}
+.progress-bar{
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+}
+.progress-bar p{
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+
+/*------------- Media Query--------------*/
+
+@media (max-width:1500px) {
+    .skl p{
+        font-size: 16px;
+    }
+}
+@media (max-width:1350px) {
+    .about-me{
+        padding: 40px 5%;
+    }
+    .bio p{
+        font-size: 20px;
+    }
+    .skills-section{
+        width:90%
+    }
+}
+@media (max-width:1150px) {
+    .skills{
+        grid-template-columns: 1fr 1fr;
+    }
+    .skl{
+        margin: 20px 10%;
+    }
+    .skl p{
+        font-size: 20px;
+    }
+}
+@media (max-width:800px) {
+    .overview{
+        left: 12%;
+    }
+    .text-s{
+        font-size: 20px;
+    }
+    .text-b{
+        font-size: 45px;
+    }
+    .social-media{
+        left: 15px;
+    }
+    .skl p{
+        font-size: 18px;
+    }
+}
+@media (max-width:650px) {
+    .about-me{
+        flex-direction: column;
+    }
+    .profile-img{
+        margin-bottom: 10px;
+    }
+    .skills{
+        grid-template-columns: 1fr;
+    }  
+    .bio p{
+        font-size: 16px;
+    } 
+}
+
+
+
+
+
+
+

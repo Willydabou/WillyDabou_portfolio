@@ -1,0 +1,71 @@
+<style>
+    .footer{
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background-color: rgb(94, 55, 40);
+        margin-top: 50px;
+        text-align: center;
+    }
+    .links-media{
+        width: 25%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .link{
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid white;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .link:hover{
+        cursor: pointer;
+    }
+    .link img{
+        width: 29px;
+        height: 29px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .copy-right{
+        margin: 20px 0px;
+    }
+    @media (max-width:800px) {
+        .links-media{
+            width: 50%;
+        }
+    }
+</style>
+<div class="footer">
+    <div class="links-media">
+        <div class="link">
+            <img src="Images/github-f.png"
+            onclick="window.open('https://github.com/Willydabou', '_blank')">
+        </div>
+        <div class="link">
+            <img src="Images/gmail-f.png"
+            onclick="window.open('mailto:dabouwilly@gmail.com', '_blank')">
+        </div>
+        <div class="link">
+            <img src="Images/linkedin.png"
+            onclick="window.open('https://www.linkedin.com/in/willydabou/', '_blank')">
+        </div>
+        <div class="link">
+            <img src="Images/facebook-f.png"
+            onclick="window.open('https://www.facebook.com/profile.php?id=100006233749208', '_blank')">
+        </div>
+        <div class="link">
+            <img src="Images/instagram-f.png"
+            onclick="window.open('https://www.instagram.com/d_____willy/','_blank')">
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>&copy; 2025</p>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.project-top-container{
+    background-color: rgb(94, 55, 40);
+    height: 1200px;
+    padding-top: 10px;
+}
+.projects{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 150px;
+}
+.aProject {
+  position: relative;
+  height: 250px;
+  border-radius: 20px;
+  border: 2px solid rgb(245, 243, 243);
+  box-shadow: 7px 7px 5px rgba(255,255,255,0.15); 
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), #378ee0 80%),
+    url('Images/IMG20210928173147.jpg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Add animated blue background layer */
+.aProject::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(55, 142, 224, 0.9); 
+  z-index: 0;
+  transition: left 0.4s ease;
+  border-radius: 20px 0 0 20px; 
+}
+
+.aProject:hover::before {
+  left: 0;
+}
+
+.project-content {
+  color: white;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.project-title,
+.project-desc {
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-title {
+  opacity: 1;
+}
+
+.project-desc {
+  opacity: 0;
+  position: absolute;
+}
+
+.aProject:hover {
+  cursor: pointer;
+}
+
+.aProject:hover .project-title {
+  opacity: 0;
+}
+
+.aProject:hover .project-desc {
+  opacity: 1;
+  position: relative;
+}
+
+  
+
+
+  
