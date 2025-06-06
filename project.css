@@ -3,8 +3,8 @@ body{
     padding: 0;
 }
 .project-top-container{
-    background-color: rgb(94, 55, 40);
-    height: 1200px;
+    background: linear-gradient(to bottom, rgb(32, 20, 199), white);
+    height: 100%;
     padding-top: 10px;
 }
 .projects{
@@ -14,6 +14,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin-top: 150px;
+    padding-bottom: 30px;
 }
 .aProject {
   position: relative;
@@ -33,6 +34,23 @@ body{
   justify-content: center;
   text-align: center;
 }
+.travel{
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), #378ee0 80%),
+    url('Images/515Travel.png');
+}
+.blackjack{
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), #378ee0 80%),
+    url('Images/BlackJack_game.png');
+}
+.memory{
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), #378ee0 80%),
+    url('Images/Memory_Game.png');
+}
+
+
 
 /* Add animated blue background layer */
 .aProject::before {
@@ -67,6 +85,7 @@ body{
 
 .project-title {
   opacity: 1;
+  font-size: 30px;
 }
 
 .project-desc {
@@ -85,9 +104,43 @@ body{
 .aProject:hover .project-desc {
   opacity: 1;
   position: relative;
+  font-size: 20px;
+}
+.footer-container{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
-  
+
+/*----------- MEDIA QUERY--------------*/
+@media (max-width:1200px) {
+  .aProject:hover .project-desc{
+    font-size: 18px;
+  }
+}
+@media (max-width:1000px) {
+  .aProject:hover .project-desc{
+    font-size: 16px;
+  }
+  .project-content{
+    padding: 0px 15px 10px 15px;
+  }
+}
+@media (max-width:800px) {
+  .projects{
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 130px;
+  }
+}
+@media (max-width:550px) {
+  .projects{
+    grid-template-columns: 1fr;
+    
+  }
+}
 
 
   

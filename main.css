@@ -280,8 +280,12 @@
     }
 }
 @media (max-width:800px) {
+    .top-container{
+        height: 500px;
+    }
     .overview{
         left: 12%;
+        top: 20%;
     }
     .text-s{
         font-size: 20px;
@@ -297,6 +301,12 @@
     }
 }
 @media (max-width:650px) {
+    .top-container{
+        height: 350px;
+    }
+    .overview{
+        top: 17%;
+    }
     .about-me{
         flex-direction: column;
     }
@@ -308,7 +318,17 @@
     }  
     .bio p{
         font-size: 16px;
+    }
+    .text-s{
+        font-size: 16px;
     } 
+    .text-b{
+        font-size: 34px;
+    }
+    .btns button{
+        font-size: 16px;
+        padding: 5px 7px;
+    }
 }
 
 

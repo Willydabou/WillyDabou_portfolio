@@ -71,6 +71,9 @@
         padding: 7px 10px;
         border-radius: 15px;
     }
+    .nav-lang{
+        padding-top: 7px;
+    }
 }
 @media (max-width:650px) {
     .navbar{
@@ -84,17 +87,27 @@
         left: 2.5%;
     }
     .nav-menu{
-        font-size: 16px;
-        padding: 5px 7px;
+        font-size: 14px;
+        padding: 3px 5px;
         border-radius: 10px;
+    }
+    .nav-lang{
+        padding-top: 0;
+        padding-right: 5px;
+    }
+}
+@media (max-width:400px) {
+    .navbar{
+        width: 100%;
+        left: 0;
     }
 }
 </style>
 <div class="navbar">
     <div class="nav-menu" onclick="window.location.href='main.html'">HOME</div>
     <div class="nav-menu" onclick="window.location.href='project.html'">PROJECTS</div>
-    <div class="nav-menu">EDUCATION</div>
-    <div class="nav-menu">CONTACT</div>
+    <div class="nav-menu" onclick="window.location.href='process.html'">EDUCATION</div>
+    <div class="nav-menu" onclick="window.location.href='contact.html'">CONTACT</div>
     <div class="nav-lang">
         <select id="languages">
             <option value="en">En</option>
