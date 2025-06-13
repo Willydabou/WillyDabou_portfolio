@@ -49,6 +49,11 @@ body{
     linear-gradient(to right, rgba(0, 0, 0, 0.6), #378ee0 80%),
     url('Images/Memory_Game.png');
 }
+.coffeeshop{
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), #378ee0 80%),
+    url('Images/coffeeshop.png');
+}
 
 
 
