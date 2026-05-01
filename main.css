@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     background-position: 85%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 2vh;
 }
 /*-----------------OVERVIEW---------------*/
 .overview{
@@ -22,24 +22,24 @@
     text-align: left;
 }
 .text-s{
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 .text-b{
-    font-size: 55px;
+    font-size: 4rem;
     font-weight: bold;
 }
 .btns{
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 1.5vh;
 }
 .btns button{
-    padding: 10px 15px;
+    padding: 1.5vh 1.5vw;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1.5rem;
     outline: none;
     border: none;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-    margin-right: 10px;
+    margin-right: 1vw;
 }
 .btns button:hover{
     cursor: pointer;
@@ -58,7 +58,7 @@
 .social-media{
     position: fixed;
     top: 0;
-    left: 30px;
+    left: 2vw;
     bottom: 0;
     display: grid;
     grid-template-rows: 2fr 1fr 2fr;
@@ -74,8 +74,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 .media img{
     width: 25px;
@@ -92,11 +92,11 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    padding: 40px 10%;
+    padding: 4vh 10%;
     justify-content: space-between;
 }
 .profile-img{
-    margin-right: 30px;
+    margin-right: 3vw;
     align-items: center;
 }
 .profile-img img{
@@ -111,15 +111,15 @@
     border-radius: 10px;
     background-color: white;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1vh 2vw;
 }
 .bio::before {
     content: "";
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(94, 55, 40);
     clip-path: polygon(0 0, 100% 0, 0 100%);
     border-top-left-radius: 10px;
@@ -129,14 +129,14 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(94, 55, 40);
     clip-path: polygon(100% 100%, 0 100%, 100% 0);
     border-bottom-right-radius: 10px;
 }
 .bio p{
-    font-size: 24px;
+    font-size: 2rem;
     line-height: 35px;
     color: rgb(8, 8, 8);
 }
@@ -148,29 +148,29 @@
 }
 .skills-section h3{
     color: rgb(17, 16, 16);
-    font-size: 34px;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0px;
+    margin: 2vh 0px;
 }
 .skills{
     background: url('Images/keyboard.jpg');
-    margin-top: 30px;
+    margin-top: 4vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     border-radius: 5px;
-    padding: 10px 0px;
+    padding: 1vh 0px;
 }
 .skl{
     position: relative;
-    padding: 10px;
-    height: 350px;
+    padding: 1vh 1vw;
+    height: 60vh;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     background-color: rgba(235, 231, 231,0.5);
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 2vw;
+    margin-left: 2vw;
     text-align: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -185,7 +185,7 @@
 .skl p{
     color: rgb(34, 33, 33);
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 0.2vh;
 }
 .skill-description{
     display: none;
@@ -252,85 +252,195 @@
 
 /*------------- Media Query--------------*/
 
-@media (max-width:1500px) {
-    .skl p{
+/* Large desktop — slight text reduction */
+@media (max-width: 1500px) {
+    .skl p {
         font-size: 16px;
-    }
-}
-@media (max-width:1350px) {
-    .about-me{
-        padding: 40px 5%;
-    }
-    .bio p{
-        font-size: 20px;
-    }
-    .skills-section{
-        width:90%
-    }
-}
-@media (max-width:1150px) {
-    .skills{
-        grid-template-columns: 1fr 1fr;
-    }
-    .skl{
-        margin: 20px 10%;
-    }
-    .skl p{
-        font-size: 20px;
-    }
-}
-@media (max-width:800px) {
-    .top-container{
-        height: 500px;
-    }
-    .overview{
-        left: 12%;
-        top: 20%;
-    }
-    .text-s{
-        font-size: 20px;
-    }
-    .text-b{
-        font-size: 45px;
-    }
-    .social-media{
-        left: 15px;
-    }
-    .skl p{
-        font-size: 18px;
-    }
-}
-@media (max-width:650px) {
-    .top-container{
-        height: 350px;
-    }
-    .overview{
-        top: 17%;
-    }
-    .about-me{
-        flex-direction: column;
-    }
-    .profile-img{
-        margin-bottom: 10px;
-    }
-    .skills{
-        grid-template-columns: 1fr;
-    }  
-    .bio p{
-        font-size: 16px;
-    }
-    .text-s{
-        font-size: 16px;
-    } 
-    .text-b{
-        font-size: 34px;
-    }
-    .btns button{
-        font-size: 16px;
-        padding: 5px 7px;
     }
 }
 
+/* Medium desktop — compact bio and padding */
+@media (max-width: 1350px) {
+    .about-me {
+        padding: 40px 5%;
+    }
+    .bio p {
+        font-size: 1.15rem;
+    }
+    .skills-section {
+        width: 92%;
+    }
+    .text-b {
+        font-size: 3.5rem;
+    }
+}
+
+/* Tablet landscape — 2-column skills grid */
+@media (max-width: 1150px) {
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+    .skl {
+        margin: 16px 6%;
+        height: auto;
+        min-height: 55vh;
+    }
+    .skl p {
+        font-size: 18px;
+    }
+}
+
+/* Tablet portrait — tighten hero and nav */
+@media (max-width: 900px) {
+    .top-container {
+        height: 520px;
+        background-position: 70%;
+    }
+    .overview {
+        left: 8%;
+        top: 22%;
+    }
+    .text-b {
+        font-size: 3rem;
+    }
+    .text-s {
+        font-size: 1.1rem;
+    }
+    .btns button {
+        font-size: 1.1rem;
+        padding: 1vh 2.5vw;
+    }
+    .social-media {
+        left: 10px;
+    }
+}
+
+/* Large mobile — collapse hero height and bio layout */
+@media (max-width: 800px) {
+    .top-container {
+        height: 460px;
+        background-position: 75%;
+    }
+    .overview {
+        left: 10%;
+        top: 20%;
+    }
+    .text-s {
+        font-size: 1rem;
+    }
+    .text-b {
+        font-size: 2.5rem;
+    }
+    .btns button {
+        font-size: 1rem;
+        padding: 8px 14px;
+    }
+    .social-media {
+        left: 8px;
+    }
+    .bio p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .skl {
+        margin: 12px 4%;
+    }
+    .skl p {
+        font-size: 16px;
+    }
+}
+
+/* Small mobile — single column, stacked bio */
+@media (max-width: 650px) {
+    .top-container {
+        height: 340px;
+        background-position: 60%;
+    }
+    .overview {
+        top: 15%;
+        left: 8%;
+    }
+    .text-s {
+        font-size: 0.95rem;
+    }
+    .text-b {
+        font-size: 2rem;
+    }
+    .btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+    }
+    .btns button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        padding: 28px 5%;
+    }
+    .profile-img {
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+    .bio p {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+    .skills-section {
+        width: 95%;
+    }
+    .skills {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .skl {
+        margin: 10px 2%;
+        height: auto;
+        min-height: unset;
+    }
+    .skl img {
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .social-media {
+        left: 4px;
+    }
+    .media img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Extra small — very compact phones */
+@media (max-width: 400px) {
+    .top-container {
+        height: 300px;
+    }
+    .overview {
+        top: 12%;
+    }
+    .text-b {
+        font-size: 1.75rem;
+    }
+    .text-s {
+        font-size: 0.85rem;
+    }
+    .btns button {
+        font-size: 0.82rem;
+        padding: 5px 10px;
+    }
+    .bio p {
+        font-size: 0.88rem;
+    }
+    .profile-img img {
+        width: 160px;
+        height: 160px;
+    }
+}
 
 
 

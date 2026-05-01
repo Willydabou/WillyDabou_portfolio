@@ -120,6 +120,9 @@ body{
 }
 
 
+
+
+
 /*----------- MEDIA QUERY--------------*/
 @media (max-width:1200px) {
   .aProject:hover .project-desc{
