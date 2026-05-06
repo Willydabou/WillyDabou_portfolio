@@ -5,7 +5,8 @@ body{
 .project-top-container{
     background: linear-gradient(to bottom, rgb(32, 20, 199), white);
     height: 100%;
-    padding-top: 10px;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
 }
 .projects{
     width: 80%;
@@ -53,6 +54,11 @@ body{
   background-image: 
     linear-gradient(to right, rgba(0, 0, 0, 0.6), #378ee0 80%),
     url('Images/coffeeshop.png');
+}
+.tsaratoky{
+  background-image: 
+  linear-gradient(to right, rgba(0, 0, 0, 0.6), #378ee0 80%),
+    url('Images/Tsaratoky_credit.png');
 }
 
 
